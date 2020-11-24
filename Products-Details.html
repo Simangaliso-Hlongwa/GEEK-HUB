@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - GEEKHUB | STORE</title> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/GEEK-HUB logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<!---- single product details---->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="column-2">
+                <img src="images/core i5 10th gen.jpg" width="100%">
+            </div>
+            <div class="column-2">
+                <p>Home / CPU's</p>
+                <h1>Intel core i5 PROCESSOR</h1>
+                <h4>R3200.00</h4>
+                <select>
+                    <option>Select Generation</option>
+                    <option>7th GEN</option>
+                    <option>8th GEN</option>
+                    <option>9th GEN</option>
+                    <option>10th GEN</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+<!---- title ---->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+
+        </div>
+    </div>
+
+
+
+<!----- products ------>
+        <div class="small-container">
+                    <div class="row">
+                        <div class="column-4">
+                            <img src="images/NVIDIA-RTX-3080-3D-Feature.jpg">
+                            <h4>NVIDIA RTX 3080</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>R200.00</p>
+                        </div>
+                        <div class="column-4">
+                            <img src="images/intel_cooler_678x452.jpg">
+                            <h4>INTEL-CPU-COOLER(FAN)</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>R200.00</p>
+                        </div>
+                        <div class="column-4">
+                            <img src="IMAGES/medium01.jpg">
+                            <h4>GAMING MONITOR 144Hz/h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>R200.00</p>
+                        </div>
+                        <div class="column-4">
+                            <img src="images/RGB MOUSEPAD.jpg">
+                            <h4>RGB MOUSEPAD-EXTRA AIM PRECISION</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>R200.00</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+<!----- footer ----->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS mobile phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png">
+                            <img src="images/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-column-2">
+                        <img src="images/GEEK-HUB logo.png">
+                        <p>PC building made simple.</p>
+                    </div>
+                    <div class="footer-column-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Reddit</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020</p>
+        </div>
+<!-----js for toggle menu----->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    
+</body>
+</html>
